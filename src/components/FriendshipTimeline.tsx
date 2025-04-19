@@ -39,8 +39,8 @@ const FriendshipTimeline = ({ className }: FriendshipTimelineProps) => {
     },
     {
       year: "2019",
-      title: "School Trip",
-      description: "Vo school trip yaad hai? Kitna maza kiya tha humne. First time jab hum roommates bane the!"
+      title: "Tution classes",
+      description: "yaad hai kitte saari mastiya krte the hum meko har ek pal yaad hai tere saath bitaya hua wo hasi ka"
     },
     {
       year: "2020",
@@ -50,17 +50,17 @@ const FriendshipTimeline = ({ className }: FriendshipTimelineProps) => {
     {
       year: "2021",
       title: "Birthday Celebration",
-      description: "Your surprise birthday party! Kitna roya tha tu khushi se. Best din tha vo!"
+      description: "Mana har ek birthday mei ni kr pata tha wish tumhe wo blocks ke karan but tera har ek birthday mere liye har ek pal khas tha heheh"
     },
     {
       year: "2022",
-      title: "College Life Begins",
-      description: "College alag-alag hone ke baad bhi, hamari dosti utni hi strong rahi. Distance doesn't matter!"
+      title: "TUTION SE ALAG HUE",
+      description: "Tution and school se alag-alag hone ke baad bhi, hamari dosti utni hi strong rahi. Distance doesn't matter!"
     },
     {
       year: "2023",
-      title: "Travel Adventures",
-      description: "Hill station pe vo trip! Kitni photos li, kitna ghume, aur kitne secrets share kiye!"
+      title: " SUKHA PAN🙂",
+      description: "AAH mene hope di thi teri meri dosti tikegi ab still tu aayi aur sb theek ho gya pehle jesa sukhriya gundo"
     },
     {
       year: "2024",

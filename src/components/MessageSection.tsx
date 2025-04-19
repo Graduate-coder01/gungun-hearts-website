@@ -52,7 +52,7 @@ const MessageSection = ({ className }: MessageSectionProps) => {
           </p>
           
           <p className="text-lg leading-relaxed">
-            Tere saath bitaye har pal, har memory mere liye bohot special hai. Life mein tu mera/meri strongest support system hai!
+            Tere saath bitaye har pal, har memory mere liye bohot special hai. Life mein tu meri strongest support system hai!
             Thank you for always being there, for all the late-night calls, for supporting me, and for celebrating every small happiness together.
           </p>
           
