@@ -1,13 +1,79 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import FloatingBadges from "@/components/FloatingBadges";
+import FloatingHearts from "@/components/FloatingHearts";
+import Footer from "@/components/Footer";
+import FriendshipQuote from "@/components/FriendshipQuote";
+import FriendshipTimeline from "@/components/FriendshipTimeline";
+import HeroSection from "@/components/HeroSection";
+import LoadingScreen from "@/components/LoadingScreen";
+import MemoriesSection from "@/components/MemoriesSection";
+import MessageSection from "@/components/MessageSection";
+import MusicControl from "@/components/MusicControl";
+import ParallaxHearts from "@/components/ParallaxHearts";
+import PhotoGallery from "@/components/PhotoGallery";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
+import SurpriseButton from "@/components/SurpriseButton";
+import { useEffect, useState } from "react";
 
 const Index = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Update document title
+    document.title = "❤️ For Gungun - My Bestie Forever";
+  }, []);
+
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      {isLoading ? (
+        <LoadingScreen onLoadingComplete={handleLoadingComplete} />
+      ) : (
+        <div className="min-h-screen bg-gradient-to-br from-gungun-lavender/20 to-gungun-peach/30">
+          {/* Background parallax hearts */}
+          <ParallaxHearts />
+          
+          {/* Floating hearts animation */}
+          <FloatingHearts />
+          
+          {/* Floating friendship badges */}
+          <FloatingBadges />
+          
+          {/* Music control */}
+          <MusicControl className="top-4 right-0" />
+          
+          {/* Scroll to top button */}
+          <ScrollToTopButton />
+          
+          {/* Surprise button */}
+          <SurpriseButton />
+          
+          {/* Hero Section */}
+          <HeroSection />
+          
+          {/* Friendship Quote */}
+          <FriendshipQuote />
+          
+          {/* Photo Gallery */}
+          <PhotoGallery />
+          
+          {/* Friendship Timeline */}
+          <FriendshipTimeline />
+          
+          {/* Memories Section */}
+          <MemoriesSection />
+          
+          {/* Message Section */}
+          <MessageSection />
+          
+          {/* Footer */}
+          <Footer />
+        </div>
+      )}
+    </>
   );
 };
 

@@ -13,16 +13,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 270 75% 60%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 326 73% 62%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 346 100% 68%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,7 +30,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 270 75% 60%;
 
     --radius: 0.5rem;
 
@@ -97,5 +97,78 @@
 
   body {
     @apply bg-background text-foreground;
+    background: linear-gradient(135deg, #fdfcfb 0%, #E5DEFF 100%);
+    background-attachment: fixed;
   }
+}
+
+@layer utilities {
+  .text-shimmer {
+    @apply bg-gradient-to-r from-gungun-pink via-gungun-magenta to-gungun-purple bg-clip-text text-transparent box-decoration-clone;
+    background-size: 40rem 40rem;
+    animation: shimmer 2s linear infinite;
+  }
+  
+  .border-shimmer {
+    @apply relative;
+  }
+  
+  .border-shimmer::after {
+    @apply absolute inset-0 rounded-lg border-2 border-transparent;
+    background: linear-gradient(90deg, #FDE1D3, #FF719A, #D946EF, #8B5CF6, #FDE1D3) border-box;
+    background-size: 400% 400%;
+    animation: shimmer 4s linear infinite;
+    content: '';
+    z-index: -1;
+  }
+  
+  .photo-frame {
+    @apply relative border-4 border-white shadow-xl rounded-lg overflow-hidden transform transition-all duration-300;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2), 0 0 20px rgba(139, 92, 246, 0.3);
+  }
+  
+  .photo-frame:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2), 0 0 30px rgba(217, 70, 239, 0.4);
+  }
+
+  .glass-card {
+    @apply bg-white/40 backdrop-blur-md rounded-xl border border-white/20 shadow-lg;
+  }
+
+  .memory-card {
+    @apply bg-white/60 backdrop-blur-md p-6 rounded-xl border border-white/30 shadow-lg transition-all duration-300;
+  }
+  
+  .memory-card:hover {
+    @apply bg-white/80 border-gungun-pink/50 scale-[1.02];
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@keyframes floating-hearts {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.floating-heart {
+  position: fixed;
+  animation: floating-hearts 15s linear infinite;
+  color: #FF719A;
+  z-index: 10;
+  pointer-events: none;
 }
