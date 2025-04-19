@@ -144,6 +144,22 @@
     @apply bg-white/80 border-gungun-pink/50 scale-[1.02];
     box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
   }
+
+  .magic-text {
+    @apply bg-gradient-to-r from-gungun-purple via-gungun-magenta to-gungun-rose bg-clip-text text-transparent;
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+  }
+
+  .sparkle {
+    position: relative;
+  }
+
+  .sparkle::after {
+    content: '';
+    @apply absolute inset-0 bg-white/20 rounded-full blur-sm;
+    animation: sparkle 2s ease-in-out infinite;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -171,4 +187,15 @@
   color: #FF719A;
   z-index: 10;
   pointer-events: none;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes sparkle {
+  0%, 100% { transform: scale(1); opacity: 0.2; }
+  50% { transform: scale(1.2); opacity: 0.4; }
 }
