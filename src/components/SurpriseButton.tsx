@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, X } from "lucide-react";
@@ -35,9 +34,9 @@ const SurpriseButton = () => {
             transition={{ type: "spring", damping: 20, stiffness: 300 }}
             className="fixed bottom-24 right-6 max-w-xs w-full p-6 rounded-lg shadow-xl z-50 glass-card border border-white/50"
           >
-            <h3 className="text-xl font-bold mb-3 text-gungun-purple">Secret Message</h3>
+            <h3 className="text-xl font-bold mb-3 text-gungun-purple">Special Message</h3>
             <p className="text-gray-700 mb-4">
-              Gungun, tujhe pata hai tu kitni amazing hai? Tu meri life ka best part hai aur main humesha tere liye there rahunga.
+              Bro/Sis, tu meri life ka sabse special part hai! Hamari dosti ke liye always grateful hu. Tu amazing hai! 👊
             </p>
             <div className="text-center">
               <ConfettiButton />
@@ -110,7 +109,7 @@ const ConfettiButton = () => {
         )}
         onClick={createConfetti}
       >
-        Love You Too! ❤️
+        Yo bestie! High five! 🙌
       </motion.button>
       {confetti}
     </div>

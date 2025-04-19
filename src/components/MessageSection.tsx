@@ -47,23 +47,23 @@ const MessageSection = ({ className }: MessageSectionProps) => {
         
         <div className="space-y-6 text-gray-700">
           <p className="text-lg leading-relaxed">
-            <span className="font-semibold">Gungun</span>, mere life ki sabse important person! Pata hai, jab se tu meri life mein aayi hai, sab kuch kitna colorful ho gaya hai.
+            <span className="font-semibold">Gungun</span>, meri life ki sabse important person! Pata hai, jab se tu meri life mein aayi hai, sab kuch kitna colorful ho gaya hai.
             6 saal ho gaye hamari dosti ko, lekin lagta hai jaise kal hi mile the.
           </p>
           
           <p className="text-lg leading-relaxed">
-            Tere saath bitaye har pal, har memory mere liye bohot special hai. Tere bina life imagine nahi kar sakti!
-            Thank you for always being there, for all the late-night calls, for wiping my tears, and for celebrating every small happiness with me.
+            Tere saath bitaye har pal, har memory mere liye bohot special hai. Life mein tu mera/meri strongest support system hai!
+            Thank you for always being there, for all the late-night calls, for supporting me, and for celebrating every small happiness together.
           </p>
           
           <p className="text-lg leading-relaxed font-medium">
-            Tu best hai, unique hai, aur meri life ka most beautiful part hai! Hamari dosti humesha aise hi bani rahe. 
+            Tu sabse unique hai, aur meri life ka most beautiful part hai! Hamari dosti humesha aise hi bani rahe. 
             I promise main bhi humesha tere liye rahunga, no matter what!
           </p>
           
           <div className="pt-4 text-right">
-            <p className="text-gungun-magenta font-semibold text-lg">Love you forever,</p>
-            <p className="text-gungun-purple font-bold text-xl">Your Bestie ❤️</p>
+            <p className="text-gungun-magenta font-semibold text-lg">Always here for you,</p>
+            <p className="text-gungun-purple font-bold text-xl">Tere Bestie 💯</p>
           </div>
         </div>
       </div>
